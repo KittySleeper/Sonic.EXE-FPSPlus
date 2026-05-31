@@ -1,0 +1,19 @@
+class SonicEXE extends CharacterInfoBase {
+    function new() {
+        super();
+
+        info.spritePath = "shared/characters/sonicexe";
+        info.frameLoadType = setSparrow();
+        info.iconName = "sonicexe";
+
+        addByPrefix('singDOWN-alt', offset(0, -40), 'SONIClaugh', 24, loop(false));
+        addByPrefix('singUP', offset(34, 31), 'SONICmoveUP', 24, loop(false));
+        addByPrefix('singRIGHT', offset(-90, -16), 'SONICmoveRIGHT', 24, loop(false));
+        addByPrefix('idle', offset(-60, -80), 'SONICmoveIDLE', 24, loop(true));
+        addByPrefix('singDOWN', offset(20, -160), 'SONICmoveDOWN', 24, loop(false));
+        addByPrefix('singLEFT', offset(110, -63), 'SONICmoveLEFT', 24, loop(false));
+
+        info.focusOffset.set(0, 45);
+        addExtraData("reposition", [0, -85]);
+    }
+}
