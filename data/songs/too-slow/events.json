@@ -211,23 +211,58 @@
 			"time": 124277.777777778
 		},
 		{
+			"tag": "Fade Hud Alpha;0",
+			"lane": 0,
+			"time": 129611.111111111
+		},
+		{
 			"tag": "camFocusDad;-105;5;16s;circOut",
 			"lane": 1,
-			"time": 129444.444444444
+			"time": 129611.111111111
 		},
 		{
-			"tag": "camZoom;1.5;16s;circInOut;true",
+			"tag": "camZoom;1.5;16s;circOut;true",
 			"lane": 2,
-			"time": 129444.444444444
+			"time": 129611.111111111
 		},
 		{
-			"tag": "camFocusDad;-105;5;16s;circOut",
+			"tag": "Bars Event;550;16s;circOut;0x000000",
+			"lane": 3,
+			"time": 129611.111111111
+		},
+		{
+			"tag": "toggleAnimLock;dad",
+			"lane": 0,
+			"time": 129629.861111111
+		},
+		{
+			"tag": "playAnim;dad;getya;true",
+			"lane": 1,
+			"time": 129642.361111111
+		},
+		{
+			"tag": "toggleAnimLock;dad",
+			"lane": 0,
+			"time": 140265.277777778
+		},
+		{
+			"tag": "Fade Hud Alpha",
+			"lane": 0,
+			"time": 140277.777777778
+		},
+		{
+			"tag": "camFocusDad;0;0;16s;circOut",
 			"lane": 1,
 			"time": 140277.777777778
 		},
 		{
-			"tag": "camZoom;1;16s;circInOut;true",
+			"tag": "camZoom;1;16s;circOut;true",
 			"lane": 2,
+			"time": 140277.777777778
+		},
+		{
+			"tag": "Bars Event;800;16s;circOut;0x000000",
+			"lane": 3,
 			"time": 140277.777777778
 		},
 		{

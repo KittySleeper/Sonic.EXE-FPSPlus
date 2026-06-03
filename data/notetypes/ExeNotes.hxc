@@ -1,0 +1,30 @@
+package notetypes;
+
+import flixel.FlxG;
+import flixel.FlxSprite;
+import flixel.util.FlxTimer;
+
+class ExeNotes extends NoteType
+{
+	override function defineTypes():Void{
+		registerNoteType({prefix: "StaticNote", noteMiss: staticNoteMiss, skin: "StaticNoteSkin", editor: {hidden: false}});
+	}
+
+	function staticNoteMiss(note:Note, character:Character){
+		var daNoteStatic = new FlxSprite(0, 0);
+		daNoteStatic.frames = Paths.getSparrowAtlas('ui/hitStatic');
+		daNoteStatic.animation.addByPrefix('static', "staticANIMATION", 24, false);
+		daNoteStatic.animation.play('static');
+		daNoteStatic.cameras = [playstate.camHUD];
+		playstate.add(daNoteStatic);
+
+		FlxG.camera.shake(0.005, 0.005);
+		FlxG.sound.play(Paths.sound("hitStatic1"));
+
+		new FlxTimer().start(.38, function(trol:FlxTimer)
+		{
+			daNoteStatic.kill();
+			trace('ended HITSTATICLAWL');
+		});
+	}
+}

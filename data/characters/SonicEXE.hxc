@@ -6,12 +6,15 @@ class SonicEXE extends CharacterInfoBase {
         info.frameLoadType = setSparrow();
         info.iconName = "sonicexe";
 
-        addByPrefix('singDOWN-alt', offset(0, -40), 'SONIClaugh', 24, loop(false));
-        addByPrefix('singUP', offset(34, 31), 'SONICmoveUP', 24, loop(false));
-        addByPrefix('singRIGHT', offset(-90, -16), 'SONICmoveRIGHT', 24, loop(false));
+        info.preventShortIdle = true; // if anyone knows why his idle still ends too quick when the BPM is quick please let me know or send a PR
+
         addByPrefix('idle', offset(-60, -80), 'SONICmoveIDLE', 24, loop(true));
-        addByPrefix('singDOWN', offset(20, -160), 'SONICmoveDOWN', 24, loop(false));
         addByPrefix('singLEFT', offset(110, -63), 'SONICmoveLEFT', 24, loop(false));
+        addByPrefix('singUP', offset(34, 31), 'SONICmoveUP', 24, loop(false));
+        addByPrefix('singDOWN', offset(20, -160), 'SONICmoveDOWN', 24, loop(false));
+        addByPrefix('singRIGHT', offset(-90, -16), 'SONICmoveRIGHT', 24, loop(false));
+        addByPrefix('singDOWN-alt', offset(0, -40), 'SONIClaugh', 24, loop(false));
+        addByPrefix('getya', offset(0, 0), 'anim', 24, loop(false));
 
         info.focusOffset.set(0, 45);
         addExtraData("reposition", [0, -85]);

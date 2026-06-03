@@ -1,0 +1,38 @@
+package noteskins;
+
+import flixel.FlxSprite;
+
+class StaticNoteSkin extends NoteSkinBase
+{
+	public function new(){
+		super();
+
+		var daNoteStatic = new FlxSprite(0, 0);
+		daNoteStatic.frames = Paths.getSparrowAtlas('ui/hitStatic');
+		daNoteStatic.animation.addByPrefix('static', "staticANIMATION", 24, false);
+		daNoteStatic.animation.play('static');
+
+		info.path = "ui/notes/STATICNOTE_assets";
+		info.frameLoadType = setSparrow();
+
+		setScrollAnimPrefix(left, "purple0", 24);
+		setGlowAnimPrefix(left, "purple0", 24);
+		setHoldAnimPrefix(left, "purple0", 24);
+		setEndAnimPrefix(left, "purple0", 24);
+
+		setScrollAnimPrefix(down, "blue0", 24);
+		setGlowAnimPrefix(down, "blue0", 24);
+		setHoldAnimPrefix(down, "blue0", 24);
+		setEndAnimPrefix(down, "blue0", 24);
+
+		setScrollAnimPrefix(up, "green0", 24);
+		setGlowAnimPrefix(up, "green0", 24);
+		setHoldAnimPrefix(up, "green0", 24);
+		setEndAnimPrefix(up, "green0", 24);
+
+		setScrollAnimPrefix(right, "red0", 24);
+		setGlowAnimPrefix(right, "red0", 24);
+		setHoldAnimPrefix(right, "red0", 24);
+		setEndAnimPrefix(right, "red0", 24);
+	}
+}

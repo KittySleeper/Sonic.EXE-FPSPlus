@@ -1668,7 +1668,7 @@
 		},
 		{
 			"length": 0,
-			"tag": "Static Note",
+			"tag": "StaticNote",
 			"direction": 2,
 			"player": false,
 			"time": 108472.222222222
@@ -1717,7 +1717,7 @@
 		},
 		{
 			"length": 0,
-			"tag": "Static Note",
+			"tag": "StaticNote",
 			"direction": 1,
 			"player": false,
 			"time": 109472.222222222
@@ -1787,7 +1787,7 @@
 		},
 		{
 			"length": 0,
-			"tag": "Static Note",
+			"tag": "StaticNote",
 			"direction": 2,
 			"player": false,
 			"time": 111138.888888889
